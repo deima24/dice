@@ -47,3 +47,7 @@ while max(players_score) < max_score:
 
         players_score[players_idx] += curent_score
         print("Your total scored are: ", players_score[players_idx])
+
+max_score = max(players_score)
+winning_idx = players_idx.index(max_score)
+print("Player number", winning_idx + 1, " is thewinner with the score of:", max_score)
